@@ -1,0 +1,7 @@
+{
+  "name": "Deputados App",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
