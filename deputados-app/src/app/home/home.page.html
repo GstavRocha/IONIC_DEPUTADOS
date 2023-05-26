@@ -1,19 +1,22 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="primary">
     <ion-title>
-      App Deputados
+      DEPUTADOS
     </ion-title>
   </ion-toolbar>
 </ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-content>
-    <ion-list *ngFor="let dp of Deputados">
-      <ion-item>
-        <ion-card>
-
-        </ion-card>
-      </ion-item>
-    </ion-list>
-  </ion-content>
+<ion-content>
+  <ion-list *ngFor="let deputado of deputados">
+    <ion-card>
+      <img src="{{deputado.urlFoto}}" alt="{{deputado.nome}}" width="150px" class="centralizar-foto"/>
+      <ion-card-header>
+       <ion-card-title> Nome: {{deputado.nome}}</ion-card-title>
+        <ion-card-subtitle>Partido: {{deputado.siglaPartido}}</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        id Legislatura: {{deputado.idLegislatura}}
+        UF: {{deputado.siglaUf}}
+      </ion-card-content>
+    </ion-card>
+  </ion-list>
 </ion-content>

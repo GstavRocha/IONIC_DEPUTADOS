@@ -1,4 +1,3 @@
-import {Query} from "@angular/core";
 
 export class Deputados{
   public id: number;
@@ -7,6 +6,7 @@ export class Deputados{
   public siglaUf: string [];
   public siglaPartido: string[];
   public siglaSexo: string;
+  public urlFoto: string;
   constructor() {
     this.id = 0;
     this.nome = '';
@@ -14,6 +14,7 @@ export class Deputados{
     this.siglaUf = [];
     this.siglaPartido = [];
     this.siglaSexo= '';
+    this.urlFoto = '';
 
   }
 }
